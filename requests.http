@@ -1,0 +1,30 @@
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Ben Franklin",
+  "email": "ben@ben.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "ben@ben.com",
+  "password": "password"
+}
+
+### Dogs create
+POST http://localhost:3000/dogs.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2MzUyOTc5MzN9.yVwcmkFrPDk6jClgRt869Ha6YROqKvO8OgXu2THy2A4
+Content-Type: application/json
+
+{
+  "name": "",
+  "age": 25,
+  "breed": "husky"
+}
